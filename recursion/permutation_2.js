@@ -31,7 +31,6 @@ var permuteUnique = function(nums) {
     nums = nums.sort((a,b)=> a - b);
 
     function backtrack(comb){
-        console.log(comb)
         if(comb.length === nums.length){
             result.push([...comb])
             return;
